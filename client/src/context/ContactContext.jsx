@@ -48,7 +48,7 @@ export const ContactProvider = ({ children }) => {
 
   const addContact = async (contactData) => {
     try {
-      const { data } = await api.post('/contacts', contactData);
+      const { data } = await api.post('/contacts/', contactData);
       setContacts([data.data, ...contacts]);
       return true;
     } catch (err) {
