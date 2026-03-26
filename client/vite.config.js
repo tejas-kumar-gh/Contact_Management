@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target:'https://contact-management-8a2h.onrender.com',
+        target:'https://contact-management-8a2h.onrender.com/api',
         changeOrigin: true,
       }
     }
