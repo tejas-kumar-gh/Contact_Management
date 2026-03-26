@@ -1,0 +1,154 @@
+.details-header {
+  padding: 40px;
+  border-bottom: 1px solid rgba(171, 78, 104, 0.1);
+  background: rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  border-radius: 24px 24px 0 0;
+}
+
+@media (min-width: 768px) {
+  .details-header {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.details-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: var(--rose-vale);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 3rem;
+  box-shadow: 0 8px 24px rgba(171, 78, 104, 0.3);
+  border: 4px solid rgba(255, 255, 255, 0.8);
+  flex-shrink: 0;
+}
+
+.details-title {
+  flex: 1;
+}
+
+.details-name {
+  margin: 0 0 8px 0;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.details-job {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+.company-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  margin-top: 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: rgba(171, 78, 104, 0.1);
+  color: var(--rose-vale-dark);
+}
+
+.fav-btn-large {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: white;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.fav-btn-large:hover {
+  transform: scale(1.1);
+}
+
+.fav-btn-large.active {
+  color: #ffc107;
+}
+
+.details-body {
+  padding: 40px;
+}
+
+.details-section-title {
+  margin: 0 0 24px 0;
+  font-size: 1.25rem;
+  color: var(--text-dark);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-item-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.info-item-val {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--text-dark);
+}
+
+.details-notes {
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(171, 78, 104, 0.1);
+  border-radius: 0 0 24px 24px;
+}
+
+.notes-box {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(171, 78, 104, 0.15);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.notes-text {
+  margin: 0;
+  color: var(--text-dark);
+  white-space: pre-wrap;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
