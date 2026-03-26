@@ -4,9 +4,9 @@
   "description": "Backend for Contact Management App",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
-  },
+  "start": "node server.js",
+  "dev": "nodemon server.js"
+},
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
