@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: import.meta.env.VITE_API_URL,
+        target:'https://contact-management-8a2h.onrender.com',
         changeOrigin: true,
       }
     }
